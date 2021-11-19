@@ -6,13 +6,12 @@ import MapView, { Marker } from "react-native-maps";
 const Map = () => {
     return (
         <MapView
-        ref={mapRef}
         style={tw`flex-1`}
         initialRegion={{
-          latitude: origin.location.lat,
-          longitude: origin.location.lng,
-          latitudeDelta: 0.005,
-          longitudeDelta: 0.005,
+          latitude: 37.78825,
+          longitude: -122.4324,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
         }}
       />
     )
