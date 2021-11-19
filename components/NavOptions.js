@@ -19,9 +19,16 @@ const data = [
 
 const NavOptions = () => {
     return (
-        <View>
-            <Text>Hello world</Text>
-        </View>
+        <FlatList
+      data={data}
+      keyExtractor={(item) => item.id}
+      horizontal
+      renderItem={({ item }) => (
+        <TouchableOpacity>
+            
+        </TouchableOpacity>
+      )}
+          />
     )
 }
 
