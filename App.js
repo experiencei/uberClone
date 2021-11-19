@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Provider store={store}>
     <View style={styles.container}>
-      <Text>Let build Uber @</Text>
+      <Text>Let build Uber! </Text>
     </View>
     </Provider>
   );
