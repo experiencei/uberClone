@@ -4,9 +4,11 @@ import { Provider } from "react-redux";
 
 export default function App() {
   return (
+    <Provider store={store}>
     <View style={styles.container}>
       <Text>Let build Uber @</Text>
     </View>
+    </Provider>
   );
 }
 
