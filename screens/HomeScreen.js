@@ -2,7 +2,7 @@ import React from 'react'
 import { SafeAreaView, StyleSheet, Text, View, Image } from "react-native";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import { GOOGLE_MAPS_APIKEY } from "@env";
-
+import { useDispatch } from "react-redux";
 import NavOptions from "../components/NavOptions";
 import tw from "tailwind-react-native-classnames";
 
