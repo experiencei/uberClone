@@ -1,12 +1,12 @@
 import React from 'react'
 import { SafeAreaView, StyleSheet, Text, View, Image } from "react-native";
+import NavOptions from "../components/NavOptions";
 import tw from "tailwind-react-native-classnames";
 
 const HomeScreen = () => {
     return (
-        <SafeAreaView style={tw`bg-white h-full pt-10 pl-5 `}>
-            <Text>I am HomeScreen</Text>
-            <View>
+        <SafeAreaView style={tw`bg-white h-full`}>
+            <View style={tw`p-5`}>
                 <Image
                     style={{
                     width: 100,
