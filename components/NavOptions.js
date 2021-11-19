@@ -1,5 +1,6 @@
 import React from 'react'
 import {FlatList, Text, TouchableOpacity, View, Image } from 'react-native'
+import tw from "tailwind-react-native-classnames";
 
 
 const data = [
@@ -24,14 +25,25 @@ const NavOptions = () => {
       keyExtractor={(item) => item.id}
       horizontal
       renderItem={({ item }) => (
-        <TouchableOpacity>
-            
+        <TouchableOpacity
+        style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40 rounded-2xl`}
+        >
+            <View>
+                <Image 
+                     style={{
+                width: 120,
+                height: 120,
+                resizeMode: "contain",
+              }}
+                    source={{
+                uri: item.image,
+              }}
+                />
+            </View>
         </TouchableOpacity>
       )}
           />
     )
 }
 
-export default NavOptions
-
-const styles = StyleSheet.create({})
+export default NavOptions;
