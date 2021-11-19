@@ -12,7 +12,7 @@ import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplet
 import { GOOGLE_MAPS_APIKEY } from "@env";
 import { useDispatch } from "react-redux";
 import { setDestination } from "../slices/navSlice";
-import NavFavourites from "./NavFavourites";
+import NavFavourites from "./NavFavourites.js";
 import { Icon } from "react-native-elements";
 
 const NavigateCard = () => {
