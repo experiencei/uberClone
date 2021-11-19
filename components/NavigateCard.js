@@ -1,11 +1,16 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from 'react';
+import {SafeAreaView,
+    Text,
+    TouchableOpacity,
+    View,
+    StyleSheet} from 'react-native'
+import tw from "tailwind-react-native-classnames";
 
 const NavigateCard = () => {
     return (
-        <View>
-            <Text></Text>
-        </View>
+        <SafeAreaView style={tw`bg-white flex-1`}>
+            <Text style={tw`text-center py-5 text-xl`}>Hey, User</Text>
+        </SafeAreaView>
     )
 }
 
