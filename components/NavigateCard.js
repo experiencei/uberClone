@@ -9,6 +9,9 @@ import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplet
 import { GOOGLE_MAPS_APIKEY } from "@env";
 
 const NavigateCard = () => {
+    const navigation = useNavigation();
+    const dispatch = useDispatch();
+    
     return (
         <SafeAreaView style={tw`bg-white flex-1`}>
             <Text style={tw`text-center py-5 text-xl`}>Hey, User</Text>
