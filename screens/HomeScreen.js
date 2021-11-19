@@ -23,24 +23,35 @@ const HomeScreen = () => {
                    }}
                 />
             <GooglePlacesAutocomplete
-             placeholder="Where from?"
-             styles={{
+          placeholder="Where from?"
+          styles={{
             container: {
               flex: 0,
             },
             textInput: {
               fontSize: 18,
             },
-            }}
-            enablePoweredByContainer={false}
-            minLength={2}
-            query={{
+          }}
+          onPress={(data, details = null) => {
+            dispatch(
+              setOrigin({
+                location: details.geometry.location,
+                description: data.description,
+              })
+            );
+            dispatch(setDestination(null));
+          }}
+          fetchDetails={true}
+          returnKeyType={"search"}
+          enablePoweredByContainer={false}
+          minLength={2}
+          query={{
             key: GOOGLE_MAPS_APIKEY,
             language: "en",
-             }}
-            nearbyPlacesAPI="GooglePlacesSearch"
-            debounce={400}
-             />
+          }}
+          nearbyPlacesAPI="GooglePlacesSearch"
+          debounce={400}
+        />
               <NavOptions/>
             </View>
         </SafeAreaView>
