@@ -39,6 +39,7 @@ const NavOptions = () => {
                 uri: item.image,
               }}
                 />
+            <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
             </View>
         </TouchableOpacity>
       )}
