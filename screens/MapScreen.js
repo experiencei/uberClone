@@ -1,14 +1,14 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+// import React from 'react'
+// import { StyleSheet, Text, View } from 'react-native'
 
-const MapScreen = () => {
-    return (
-        <View>
-            <Text>Show me that</Text>
-        </View>
-    )
-}
+// const MapScreen = () => {
+//     return (
+//         <View>
+//             <Text>Show me that</Text>
+//         </View>
+//     )
+// }
 
-export default MapScreen
+// export default MapScreen
 
-const styles = StyleSheet.create({})
+// const styles = StyleSheet.create({})
