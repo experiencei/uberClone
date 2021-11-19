@@ -1,11 +1,13 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View, Image } from "react-native";
+import tw from "tailwind-react-native-classnames";
 
 const HomeScreen = () => {
     return (
-        <View>
+        <SafeAreaView >
+  
             <Text></Text>
-        </View>
+        </SafeAreaView>
     )
 }
 
