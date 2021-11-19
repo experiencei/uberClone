@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Provider } from "react-redux";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Let build Uber </Text>
+      <Text>Let build Uber @</Text>
     </View>
   );
 }
